@@ -245,15 +245,15 @@ p, ul {
         display: grid;
         grid-template-columns: repeat(7,70px);
         justify-content: center;
-        margin-bottom: 20px;
-        column-gap: 5px;
+        
+        column-gap: 2px;
         
         
     }
     
     .highlight-photos-img {
-        width: 56px;
-        height: 56px;
+        width: 60px;
+        height: 60px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -261,6 +261,14 @@ p, ul {
         font-size: 12px;
         font-weight: bold;
     }
+
+    .highlight-photos-img img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        border: 1px solid gray;
+        padding: 1px;
+        margin-bottom: 5px;
 
     .profile {
         grid-template-columns: repeat(2,1fr);
