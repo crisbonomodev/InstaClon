@@ -16,6 +16,7 @@ p, ul {
     display: grid;
     grid-template-columns: 25% 50% 25%;
     justify-content: space-between;
+    justify-items: center;
     align-items: center;
     height: 54px;
     background-color: rgba(var(--d87,255,255,255),1);
@@ -223,11 +224,14 @@ p, ul {
 @media screen and (max-width: 767px)
 {
 
-
+    .header {
+       
+        justify-items: center;
+    }
 
     .logo img {
         width: 100%;
-        max-width: 103px;
+        max-width: 80px;
     }
 
     .input-text {
@@ -235,21 +239,28 @@ p, ul {
         max-width: 103px;
     }
 
+    .searchbar {
+        max-width: 150px;
+    }
+
+    .text-input {
+        width: 100%;
+    }
 
 
     .post-list {
         gap: 3px;
     }
 
+  
+
     .highlight-photo-container {
         display: grid;
         grid-template-columns: repeat(7,70px);
         grid-template-rows: 100px;
-        justify-content: center;
+        justify-content: space-between;
         margin-bottom: 0;
-        column-gap: 2px;
-        
-        
+        column-gap: 2px;  
     }
     
     .highlight-photos-img {
@@ -270,6 +281,7 @@ p, ul {
         border: 1px solid gray;
         padding: 1px;
         margin-bottom: 5px;
+    }
 
     .profile {
         grid-template-columns: repeat(2,1fr);
