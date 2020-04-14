@@ -244,8 +244,9 @@ p, ul {
     .highlight-photo-container {
         display: grid;
         grid-template-columns: repeat(7,70px);
+        grid-template-rows: 100px;
         justify-content: center;
-        
+        margin-bottom: 0;
         column-gap: 2px;
         
         
